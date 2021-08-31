@@ -6,33 +6,29 @@
 
     <div class="content">
       <div class="bg-shape">
-        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405214/starwars/logo.png" alt="">
       </div>
   
       
       <div class="product-img">
   
         <div class="product-img__item" id="img1">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405217/starwars/item-1.png" alt="star wars" class="product-img__img">
+          <img src="https://purepng.com/public/uploads/large/purepng.com-audi-caraudicars-961524670909z2abo.png" alt="star wars" class="product-img__img">
         </div>
   
         <div class="product-img__item" id="img2">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405217/starwars/item-2.png" alt="star wars" class="product-img__img">
+          <img src="https://purepng.com/public/uploads/large/mercedes-car-eqc-300kw-edition-ytq.png" alt="star wars" class="product-img__img">
         </div>
   
         <div class="product-img__item" id="img3">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405218/starwars/item-3.png" alt="star wars" class="product-img__img">
+          <img src="https://purepng.com/public/uploads/large/red-edition-audi-luxury-car-jdc.png" alt="star wars" class="product-img__img">
         </div>
   
         <div class="product-img__item" id="img4">
-          <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/item-4.png" alt="star wars" class="product-img__img">
+          <img src="https://purepng.com/public/uploads/large/mercedes-car-eqc-300kw-edition-ytq.png" alt="star wars" class="product-img__img">
         </div>
-  
-  
+
       </div>
-  
-  
-  
+
       <div class="product-slider">
         <button class="prev disabled">
           <span class="icon">
@@ -46,38 +42,28 @@
         </button>
   
         <div class="product-slider__wrp swiper-wrapper">
-          <div class="product-slider__item swiper-slide" data-target="img4">
+          <div class="product-slider__item swiper-slide" data-target="img1">
             <div class="product-slider__card">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405223/starwars/item-4-bg.jpg" alt="star wars" class="product-slider__cover">
+              {{-- <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405223/starwars/item-4-bg.jpg" alt="star wars" class="product-slider__cover"> --}}
               <div class="product-slider__content">
                 <h1 class="product-slider__title">
-                  per dio <br>
-                  HELMET
+                  Audi <br>
+                  TT
                 </h1>
-                <span class="product-slider__price">$1.299,<sup>99</sup></span>
+                <span class="product-slider__price">$299,<sup>99</sup></span>
                 <div class="product-ctr">
                   <div class="product-labels">
-                    <div class="product-labels__title">HELMET SIZE</div>
+                    <div class="product-labels__title">CARBURANTE</div>
   
                     <div class="product-labels__group">
                       <label class="product-labels__item">
                         <input type="radio" class="product-labels__checkbox" name="type5" >
-                        <span class="product-labels__txt">S</span>
+                        <span class="product-labels__txt">Diesel</span>
                       </label>
   
                       <label class="product-labels__item">
                         <input type="radio" class="product-labels__checkbox" name="type5" checked>
-                        <span class="product-labels__txt">M</span>
-                      </label>
-  
-                      <label class="product-labels__item">
-                        <input type="radio" class="product-labels__checkbox" name="type5" >
-                        <span class="product-labels__txt">L</span>
-                      </label>
-  
-                      <label class="product-labels__item">
-                        <input type="radio" class="product-labels__checkbox" name="type5" >
-                        <span class="product-labels__txt">XL</span>
+                        <span class="product-labels__txt">Benzina</span>
                       </label>
   
                     </div>
@@ -104,7 +90,7 @@
                       </div>
                     </div>
   
-                    <span class="product-inf__title">DURABILITY RATE</span>
+                    <span class="product-inf__title">QUALITA' PREZZO</span>
                   </div>
   
                 </div>
@@ -119,9 +105,9 @@
               </div>
             </div>
           </div>
-          <div class="product-slider__item swiper-slide" data-target="img1">
+          <div class="product-slider__item swiper-slide" data-target="img2">
             <div class="product-slider__card">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-1-bg.jpg" alt="star wars" class="product-slider__cover">
+              {{-- <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-1-bg.jpg" alt="star wars" class="product-slider__cover"> --}}
               <div class="product-slider__content">
                 <h1 class="product-slider__title">
                   IMPERIAL  ARMY’S <br> TIE FIGHTER
@@ -180,9 +166,9 @@
               </div>
             </div>
           </div>
-          <div class="product-slider__item swiper-slide" data-target="img2">
+          <div class="product-slider__item swiper-slide" data-target="img3">
             <div class="product-slider__card">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-2-bg.jpg" alt="star wars" class="product-slider__cover">
+              {{-- <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-2-bg.jpg" alt="star wars" class="product-slider__cover"> --}}
               <div class="product-slider__content">
                 <h1 class="product-slider__title">
                   KYLO REN'S <br> LIGHTSABER
@@ -266,10 +252,9 @@
               </div>
             </div>
           </div>
-  
-          <div class="product-slider__item swiper-slide" data-target="img3">
+          <div class="product-slider__item swiper-slide" data-target="img4">
             <div class="product-slider__card">
-              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/item-3-bg.jpg" alt="star wars" class="product-slider__cover">
+              {{-- <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/item-3-bg.jpg" alt="star wars" class="product-slider__cover"> --}}
               <div class="product-slider__content">
                 <h1 class="product-slider__title">
                   IMPERIAL ARMY'S <br>
@@ -344,26 +329,11 @@
             </div>
           </div>
   
-          
-  
         </div>
       </div>
   
     </div>
-  
-    <div class="social">
-  <a href="https://twitter.com/imuhammederdem" target="_blank" class="social__item">
-        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405220/starwars/twitter.png" alt="muhammed erdem" class="social__img">
-        <span class="social__txt">Coded By Muhammed Erdem</span>
-      </a>
-  
-      <a href="https://dribbble.com/shots/3453028-Star-Wars-TIE-Fighter-UI" target="_blank" class="social__item">
-        <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405220/starwars/dribbble.png" alt="eray yeşilyurt" class="social__img">
-        <span class="social__txt">Designed By Eray Yeşilyurt</span>
-      </a>
-  
-    </div>
-  
+      
   </div>
   <svg class="hidden" hidden>
     <symbol id="icon-arrow-left" viewBox="0 0 32 32">
@@ -373,5 +343,78 @@
       <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
     </symbol>
   </svg>
-  
+
+{{-- pricing --}}
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <h2>Basic</h2>
+            </div>
+            <div class="price">
+              <h4><sup>$</sup>25</h4>
+            </div>
+            <div class="option">
+              <ul>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 10 GB Space </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 3 Domain Names </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 20 Email Address </li>
+              <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+              </ul>
+            </div>
+            <a href="#">Order Now </a>
+          </div>
+        </div>
+        <!-- END Col one -->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+              <h2>Standard</h2>
+            </div>
+            <div class="price">
+              <h4><sup>$</sup>50</h4>
+            </div>
+            <div class="option">
+              <ul>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 50 GB Space </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 5 Domain Names </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address </li>
+              <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+              </ul>
+            </div>
+            <a href="#">Order Now </a>
+          </div>
+        </div>
+        <!-- END Col two -->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="title">
+              <i class="fa fa-rocket" aria-hidden="true"></i>
+              <h2>Premium</h2>
+            </div>
+            <div class="price">
+              <h4><sup>$</sup>100</h4>
+            </div>
+            <div class="option">
+              <ul>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited GB Space </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 30 Domain Names </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> Live Support </li>
+              </ul>
+            </div>
+            <a href="#">Order Now </a>
+          </div>
+        </div>
+        <!-- END Col three -->
+      </div>
+    </div>
+  </div>
+
+
 @endsection

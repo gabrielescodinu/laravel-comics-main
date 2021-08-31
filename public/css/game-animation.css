@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 .hero-container {
 	margin: auto;
 	margin-top: 100px;
