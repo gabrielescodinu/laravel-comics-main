@@ -30,7 +30,7 @@
 
     <style>
         body {
-            font-family: 'Uni Sans', sans-serif;
+            /* font-family: 'Uni Sans', sans-serif; */
             font-weight: 500;
             background-color: hsla(210, 29%, 24%, 1);
         }
