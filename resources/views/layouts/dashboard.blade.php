@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body>
     <div class="blue"></div>
     <div id="app">
@@ -28,7 +30,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img width="100px" src="img/DC_Comics_logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -59,18 +63,19 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        class="d-none">
                                         @csrf
                                     </form>
                                 </div>
@@ -85,14 +90,18 @@
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-lg-2">
                     <ul class="list-unstyled">
-                        <li><a href="{{ route('admin.index')}}"><i class="fas fa-tachometer-alt    "></i> Dashboard</a></li>
-                        <li><a href="{{ route('admin.posts.index')}}"><i class="fas fa-book-open    "></i> Comics</a></li>
+                        <li><a href="{{ route('admin.index') }}"><i class="fas fa-tachometer-alt    "></i>
+                                Dashboard</a></li>
+                        <li><a href="{{ route('admin.posts.index') }}"><i class="fas fa-book-open    "></i>
+                                Comics</a>
+                        </li>
                     </ul>
                 </div>
-            <main class="col-xs-12 col-md-9 col-lg-10">
-                @yield('content')
-            </main>
+                <main class="col-xs-12 col-md-9 col-lg-10">
+                    @yield('content')
+                </main>
+            </div>
         </div>
-    </div>
 </body>
+
 </html>

@@ -9,7 +9,7 @@ class PageController extends Controller
     // show home page
     public function index()
     {
-        return view('guests.index');
+        return view('guests.home');
     }
     // show about
     public function about()
@@ -30,4 +30,3 @@ class PageController extends Controller
         return view('guests.posts.show');
     }
 }
-

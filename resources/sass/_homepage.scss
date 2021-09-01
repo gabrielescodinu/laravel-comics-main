@@ -1,25 +1,31 @@
 @font-face {
-  font-family: 'Uni Sans';
-  src: url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff2') format('woff2'),
-  url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff') format('woff'),
-  url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansHeavyCAPS.ttf') format('truetype');
+  font-family: "Uni Sans";
+  src: url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff2")
+      format("woff2"),
+    url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168547/unisans-font/UniSansHeavyCAPS.woff")
+      format("woff"),
+    url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansHeavyCAPS.ttf")
+      format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Uni Sans';
-  src: url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff2') format('woff2'),
-  url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff') format('woff'),
-  url('https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansThinCAPS.ttf') format('truetype');
+  font-family: "Uni Sans";
+  src: url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff2")
+      format("woff2"),
+    url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168545/unisans-font/UniSansThinCAPS.woff")
+      format("woff"),
+    url("https://res.cloudinary.com/muhammederdem/raw/upload/v1536168548/unisans-font/UniSansThinCAPS.ttf")
+      format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,600,700,800");
 
 body {
-  font-family: 'Uni Sans', sans-serif;
+  font-family: "Uni Sans", sans-serif;
   font-weight: 500;
   background-color: hsla(210, 29%, 24%, 1);
 }
@@ -47,7 +53,7 @@ a {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  margin: 200px auto;
   min-height: 750px;
   // background: url(https://res.cloudinary.com/muhammederdem/image/upload/v1536405234/starwars/death_star.jpg) center no-repeat;
   background-size: cover;
@@ -59,7 +65,6 @@ a {
     height: auto;
     min-height: 100vh;
   }
-
 }
 
 .content {
@@ -71,8 +76,7 @@ a {
   align-items: center;
   position: relative;
 
-  
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     max-width: 920px;
   }
 
@@ -86,12 +90,11 @@ a {
   @media screen and (max-width: 767px) {
     margin-top: 20px;
   }
-  
+
   @media screen and (max-width: 576px) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
 }
 
 .bg-shape {
@@ -121,30 +124,27 @@ a {
   }
 
   @media screen and (max-width: 767px) {
-        padding: 30px;
+    padding: 30px;
     width: 95%;
-     border-radius: 20px;
+    border-radius: 20px;
   }
 
   @media screen and (max-width: 576px) {
     height: 200px;
-   
+
     padding: 30px;
   }
-
-
 
   img {
     object-fit: contain;
     width: 510px;
     display: block;
     object-position: left center;
-    opacity: .2;
+    opacity: 0.2;
     transform: rotate(-90deg) translateY(-50%);
     max-width: inherit;
     left: 10px;
     position: absolute;
-
 
     @media screen and (max-width: 1200px) {
       width: 430px;
@@ -162,13 +162,11 @@ a {
       height: 100%;
       object-position: top center;
     }
-
-
   }
-
 }
 
-.next, .prev {
+.next,
+.prev {
   z-index: 22;
   display: inline-flex;
   border: none;
@@ -194,7 +192,6 @@ a {
   @media screen and (max-width: 992px) {
     top: 170px;
   }
-
 }
 
 .prev {
@@ -213,7 +210,6 @@ a {
   @media screen and (max-width: 576px) {
     transform: translate(20%, -50%);
   }
-
 }
 
 .next {
@@ -223,11 +219,9 @@ a {
   @media screen and (max-width: 576px) {
     transform: translate(-20%, -50%);
   }
-
 }
 
 .product {
-
   &-slider {
     width: 75%;
     height: 85%;
@@ -255,9 +249,8 @@ a {
       br {
         display: none;
       }
-
     }
-    
+
     @media screen and (max-width: 767px) {
       border-radius: 20px;
     }
@@ -299,17 +292,15 @@ a {
                 transition-delay: $i * 0.2s;
               }
             }
-
           }
         }
 
         circle {
           animation: progress 1s ease-out forwards;
-          animation-delay: .5s;
+          animation-delay: 0.5s;
           opacity: 0.75;
         }
       }
-
     }
 
     &__card {
@@ -317,7 +308,7 @@ a {
       display: flex;
       align-items: center;
       width: 100%;
-      transition: all .5s;
+      transition: all 0.5s;
       overflow: hidden;
       position: relative;
       border-radius: 30px;
@@ -327,8 +318,8 @@ a {
       }
 
       @media screen and (max-width: 767px) {
-      border-radius: 20px;
-    }
+        border-radius: 20px;
+      }
     }
 
     &__cover {
@@ -340,10 +331,10 @@ a {
       height: 100%;
       display: block;
       object-fit: cover;
-      
+
       @media screen and (max-width: 767px) {
-      border-radius: 20px;
-    }
+        border-radius: 20px;
+      }
     }
 
     &__content {
@@ -375,7 +366,6 @@ a {
         padding-left: 15px;
         padding-right: 15px;
       }
-
     }
 
     &__title {
@@ -387,7 +377,7 @@ a {
       letter-spacing: 2px;
       opacity: 0;
       transform: translateY(55px);
-      transition: all .5s;
+      transition: all 0.5s;
 
       @media screen and (max-width: 1200px) {
         font-size: 34px;
@@ -396,7 +386,6 @@ a {
       @media screen and (max-width: 576px) {
         font-size: 24px;
       }
-
     }
 
     &__price {
@@ -404,7 +393,7 @@ a {
       font-size: 42px;
       opacity: 0;
       transform: translateY(55px);
-      transition: all .5s;
+      transition: all 0.5s;
 
       @media screen and (max-width: 1200px) {
         font-size: 36px;
@@ -418,7 +407,6 @@ a {
         top: -20px;
         font-size: 65%;
       }
-
     }
 
     &__cart {
@@ -470,7 +458,8 @@ a {
         pointer-events: none;
         width: 100px;
         height: 100px;
-        background: url("https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/heart.png") no-repeat;
+        background: url("https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/heart.png")
+          no-repeat;
         background-position: 0 0;
         cursor: pointer;
         transition: background-position 1s steps(28);
@@ -481,17 +470,14 @@ a {
           background-position: -2800px 0;
         }
       }
-
-
     }
 
     &__bottom {
       margin-top: 20px;
       opacity: 0;
       transform: translateY(55px);
-      transition: all .5s;
+      transition: all 0.5s;
     }
-
   }
 
   &-ctr {
@@ -501,7 +487,7 @@ a {
     margin-top: 40px;
     opacity: 0;
     transform: translateY(55px);
-    transition: all .5s;
+    transition: all 0.5s;
 
     @media screen and (max-width: 992px) {
       justify-content: center;
@@ -513,7 +499,7 @@ a {
       align-self: stretch;
       margin: 0 35px;
       flex-shrink: 0;
-      opacity: .5;
+      opacity: 0.5;
     }
 
     @media screen and (max-width: 767px) {
@@ -526,13 +512,10 @@ a {
         margin: 35px 0;
         height: 1px;
       }
-
     }
-
   }
 
   &-labels {
-
     @media screen and (max-width: 767px) {
       width: 100%;
     }
@@ -544,11 +527,10 @@ a {
         border-color: #cc3743;
         padding: 10px 13px;
       }
-
     }
 
     &__title {
-      font-family: 'Dosis', sans-serif;
+      font-family: "Dosis", sans-serif;
       font-weight: 700;
       letter-spacing: 3px;
       font-size: 16px;
@@ -563,11 +545,9 @@ a {
         justify-content: center;
       }
 
-
       &:last-child {
         margin-bottom: 0;
       }
-
     }
 
     &__item {
@@ -577,7 +557,6 @@ a {
       &:first-child {
         margin-left: 0;
       }
-
     }
 
     &__txt {
@@ -587,10 +566,9 @@ a {
       padding: 10px 20px;
       padding-left: 0;
       border-radius: 50px;
-      transition: all .3s;
+      transition: all 0.3s;
       letter-spacing: 2px;
     }
-
   }
   @keyframes progress {
     0% {
@@ -609,7 +587,7 @@ a {
       font-size: 22px;
       letter-spacing: 1px;
       margin-bottom: 12px;
-      font-family: 'Dosis', sans-serif;
+      font-family: "Dosis", sans-serif;
       position: relative;
 
       circle {
@@ -623,16 +601,14 @@ a {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-
     }
 
     &__title {
-      font-family: 'Dosis', sans-serif;
+      font-family: "Dosis", sans-serif;
       font-weight: 700;
       letter-spacing: 2px;
       font-size: 18px;
     }
-
   }
 
   &-img {
@@ -661,7 +637,7 @@ a {
     @media screen and (max-width: 767px) {
       width: 100%;
       max-width: 400px;
-       top: 30px;
+      top: 30px;
       height: 390px;
     }
 
@@ -680,25 +656,21 @@ a {
       right: 0;
       transform: translateY(-50%) translateX(-130px);
       opacity: 0;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &.active {
         opacity: 1;
         transform: translateY(-50%) translateX(0);
-        transition-delay: .3s;
+        transition-delay: 0.3s;
       }
 
       img {
         object-fit: contain;
         object-position: center right;
       }
-
     }
-
   }
-
 }
-
 
 .social {
   position: absolute;
@@ -709,22 +681,20 @@ a {
   padding: 20px 55px;
   justify-content: space-between;
 
-
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 576px) {
     flex-direction: column;
     bottom: 0;
   }
 
-
   &__item {
     color: rgba(255, 255, 255, 0.75);
-    font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1em;
     display: flex;
     align-items: center;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       color: #fff;
@@ -733,18 +703,10 @@ a {
     @media screen and (max-width: 576px) {
       margin-bottom: 10px;
     }
-
   }
 
   &__img {
     width: 24px;
     margin-right: 15px;
   }
-
 }
-
-
-
-
-
-

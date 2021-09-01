@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +20,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -26,7 +28,9 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img width="70px" src="img/DC_Comics_logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -50,18 +54,19 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        class="d-none">
                                         @csrf
                                     </form>
                                 </div>
@@ -76,31 +81,47 @@
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-lg-2">
                     <ul class="list-unstyled">
-                        <li><a href="{{ route('admin.index')}}"><i class="fas fa-tachometer-alt    "></i> Dashboard</a></li>
-                        <li><a href="{{ route('admin.posts.index')}}"><i class="fas fa-book-open    "></i> Posts</a></li>
+                        <li><a href="{{ route('admin.index') }}"><i class="fas fa-tachometer-alt    "></i>
+                                Dashboard</a></li>
+                        <li><a href="{{ route('admin.posts.index') }}"><i class="fas fa-book-open    "></i> Posts</a>
+                        </li>
                     </ul>
                 </div>
-            <main class="col-xs-12 col-md-9 col-lg-10">
-                @yield('content')
-            </main>
+                <main class="col-xs-12 col-md-9 col-lg-10">
+                    @yield('content')
+                </main>
+            </div>
         </div>
-    </div>
 
-    <script>
-        var swiper = new Swiper('.product-slider', {
-        spaceBetween: 30,
-        effect: 'fade',
-        // initialSlide: 2,
-        loop: false,
-        navigation: {
-            nextEl: '.next',
-            prevEl: '.prev'
-        },
-        // mousewheel: {
-        //     // invert: false
-        // },
-        on: {
-            init: function(){
+        <script>
+            var swiper = new Swiper('.product-slider', {
+                spaceBetween: 30,
+                effect: 'fade',
+                // initialSlide: 2,
+                loop: false,
+                navigation: {
+                    nextEl: '.next',
+                    prevEl: '.prev'
+                },
+                // mousewheel: {
+                //     // invert: false
+                // },
+                on: {
+                    init: function() {
+                        var index = this.activeIndex;
+
+                        var target = $('.product-slider__item').eq(index).data('target');
+
+                        console.log(target);
+
+                        $('.product-img__item').removeClass('active');
+                        $('.product-img__item#' + target).addClass('active');
+                    }
+                }
+
+            });
+
+            swiper.on('slideChange', function() {
                 var index = this.activeIndex;
 
                 var target = $('.product-slider__item').eq(index).data('target');
@@ -108,39 +129,26 @@
                 console.log(target);
 
                 $('.product-img__item').removeClass('active');
-                $('.product-img__item#'+ target).addClass('active');
-            }
-        }
+                $('.product-img__item#' + target).addClass('active');
 
-    });
+                if (swiper.isEnd) {
+                    $('.prev').removeClass('disabled');
+                    $('.next').addClass('disabled');
+                } else {
+                    $('.next').removeClass('disabled');
+                }
 
-    swiper.on('slideChange', function () {
-        var index = this.activeIndex;
+                if (swiper.isBeginning) {
+                    $('.prev').addClass('disabled');
+                } else {
+                    $('.prev').removeClass('disabled');
+                }
+            });
 
-        var target = $('.product-slider__item').eq(index).data('target');
-
-        console.log(target);
-
-        $('.product-img__item').removeClass('active');
-        $('.product-img__item#'+ target).addClass('active');
-
-        if(swiper.isEnd) {
-            $('.prev').removeClass('disabled');
-            $('.next').addClass('disabled');
-        } else {
-            $('.next').removeClass('disabled');
-        }
-
-        if(swiper.isBeginning) {
-            $('.prev').addClass('disabled');
-        } else {
-            $('.prev').removeClass('disabled');
-        }
-    });
-
-    $(".js-fav").on("click", function() {
-        $(this).find('.heart').toggleClass("is-active");
-    });
-    </script>
+            $(".js-fav").on("click", function() {
+                $(this).find('.heart').toggleClass("is-active");
+            });
+        </script>
 </body>
+
 </html>
